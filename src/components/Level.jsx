@@ -8,6 +8,7 @@ const ChooseLevel = props => {
         <button onClick={props.mediumDiff}>Medium</button>
         <button onClick={props.hardDiff}>Hard</button>
       </section>
+      {/* {props.displayBoard} */}
     </>
   )
 }

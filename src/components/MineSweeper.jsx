@@ -24,6 +24,10 @@ const MineSweeper = () => {
   useEffect(() => {
     initialize()
   }, [])
+  // const showBoard = () => {
+  //   if (board) {
+  //   }
+  // }
 
   const leftClick = async (x, y) => {
     const resp = await Axios.post(
@@ -52,14 +56,14 @@ const MineSweeper = () => {
   const newGame = () => {
     initialize()
   }
-
-  const message = state => {
-    if (state === 'lost') {
-      return 'Loser!'
-    } else if (state === 'Won') {
-      return 'Winner!'
-    }
-  }
+  //winning losing message
+  // const message = state => {
+  //   if (state === 'lost') {
+  //     return 'Loser!'
+  //   } else if (state === 'Won') {
+  //     return 'Winner!'
+  //   }
+  // }
 
   return (
     <>
@@ -95,7 +99,7 @@ const MineSweeper = () => {
             })}
           </tbody>
         </table>
-        <p {...message}>" "</p>
+        {/* <p {message}>" "</p> */}
       </main>
     </>
   )
